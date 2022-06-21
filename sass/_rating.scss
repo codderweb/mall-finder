@@ -1,0 +1,48 @@
+.rating-banner {
+    position: relative;
+}
+.rating-banner .top-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #fff;
+    font-size: 1rem;
+
+}
+.rating-banner .top-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #fff;
+    font-size: 1rem;
+}
+.rating-banner .top-left a, .rating-banner .top-right a {
+    color: $white-color;
+}
+@media screen and (max-width: 576px) {
+    .rating-banner .top-left {
+        left: 10%;
+    }
+    .rating-banner .top-right {
+        right: 10%;
+    }
+}
+.rating-banner .rating {
+    background: green;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    position: absolute;
+    bottom: -210px !important;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.border-style {
+    border-bottom: 15px solid #eee;
+}
+.rating-contact span {
+    font-size: 1.2rem;
+}
+.contact__rating span {
+    font-size: 1.5rem !important;
+}

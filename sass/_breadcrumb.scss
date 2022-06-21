@@ -1,0 +1,80 @@
+/*---------------------
+  Breadcrumb
+-----------------------*/
+.breadcrumb-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    // height: 40vh;
+    padding: 11em 0;
+}
+// .breadcrumb input{
+//     padding: 0.5em!important;
+//     width: 300px;
+// }
+// .breadcrumb button {
+//     padding: 0.5em!important;
+//     background: rgb(254, 97, 12);
+//     border: none;
+//     outline: none;
+//     transition: all 350ms ease 0s;
+// }
+// .breadcrumb button:hover {
+//     background: #000;
+// }
+.breadcrumb__text {
+    // h4 {
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 50%;
+    //     transform: translate(-50% 0);
+    // }
+    input{
+        padding: 0.5em!important;
+        width: 300px;
+    }
+    button {
+        padding: 0.5em 1em!important;
+        background: rgb(254, 97, 12);
+        color: #fff;
+        border: none;
+        outline: none;
+        transition: all 350ms ease 0s;
+    }
+    button:hover {
+        background: #000;
+    }
+    h2 {
+        font-size: 46px;
+        color: $white-color;
+        font-weight: 700;
+    }
+}
+
+.breadcrumb__option {
+
+    a {
+        display: inline-block;
+        font-size: 16px;
+        color: $white-color;
+        font-weight: 700;
+        margin-right: 20px;
+        position: relative;
+
+        // &:after {
+        //     position: absolute;
+        //     right: -12px;
+        //     top: 13px;
+        //     height: 1px;
+        //     width: 10px;
+        //     background: $white-color;
+        //     content: '';
+        // }
+    }
+
+    span {
+        display: inline-block;
+        font-size: 16px;
+        color: $white-color;
+    }
+}

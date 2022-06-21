@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mallfinder</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="img/mallf-logo.jpg" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="img/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">Malayalam</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="ml-3 header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Login</a>
+            </div>
+            <div class="mt-4 header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Register</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>  
+                <li><a href="./shopping.html">Shopping</a>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="humberger__menu__contact">
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid px-5">
+            <div class="header-style d-flex justify-content-between align-items-center flex-wrap">
+                <div class="">
+                    <div class="header__logo">
+                        <a href="./index.html"><img class="img-fluid" src="img/mallf-logo.jpg" alt=""></a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-5">
+                  <form action="#" id="search-form">
+                    
+                    
+                </form> -->
+                <div class="px-3 py-3 d-flex justify-content-center flex-wrap">
+                    <div class="search_select_box mr-2">
+                        <select data-live-search="true" id="locationid" name="locationid">
+                          <option value="0">Location</option>
+                          <option value="32">Abu Dhabi</option>
+                          <option value="209">Ajman</option>
+                          <option value="210">Sharjah</option>
+                          <option value="29">Dubai</option>
+                          <!-- <option value="39">WORLD TRADE CENTER SOUK &amp; MALL</option> -->
+                          <option value="178">Fujairah</option>
+                          <option value="179">Ras Al Kaimah</option>
+                        </select>
+                      </div>
+                    <div class="search_select_box mr-2">
+                        <select data-live-search="true" id="mallid" name="mallid">
+                          <option value="0">Mall</option>
+                          <option value="32">Khalidiyah Mall</option>
+                          <option value="209">Marina Mall</option>
+                          <option value="210">Abu Dhabi Mall</option>
+                          <option value="29">Yas Mall</option>
+                          <option value="39">WORLD TRADE CENTER SOUK &amp; MALL</option>
+                          <option value="178">Al Wahda Mall</option>
+                          <option value="179">Dalma Mall</option>
+                        </select>
+                    </div>
+                     <div class="search_select_btn">
+                        <button type="button" id="search-button" class="search-btn">SEARCH</button>
+                    </div>
+                      
+                </div>
+                <div class="me-3">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="./shopping.html">Shopping</a>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="">
+                    
+                    <div class="header__cart">
+                        <div class="header__top__right__language">
+                            <img src="img/language.png" alt="">
+                            <div>English</div>
+                            <span class="arrow_carrot-down"></span>
+                            <ul>
+                                <li><a href="#">Arabic</a></li>
+                                <li><a href="#">English</a></li>
+                            </ul>
+                        </div>
+                        <!-- <a href="#" class="mr-1"><i class="fa fa-user"></i> Login</a>
+                        <a href="#"><i class="fa fa-user"></i> Register</a> -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->    
+            
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hero__slider owl-carousel">
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-8.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-1.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-15.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-3.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-16.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-12.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-14.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <!-- <span>Lorem Ipsum</span>
+                                <h2>Mall <br />Finder</h2>
+                                <p>Lorem ipsum dolor sit amet.</p> -->
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-7.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-10.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/banner/banner-11.jpg">
+                        <div class="container">
+                            <div class="hero__text">
+                                <a href="./shopping.html" class="primary-btn">Explore more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="categories__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="categories__item">
+                            <div class="categories__content">
+                                <i class="fa-solid fa-user"></i>
+                                <h5><a href="#">Find the account for you</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item">
+                            <div class="categories__content">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <h5><a href="#">SC Mobile App</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item">
+                            <div class="categories__content">
+                                <i class="fa-solid fa-address-card"></i>
+                                <h5><a href="#">Find the right card for you</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item">
+                            <div class="categories__content">
+                                <i class="fa-solid fa-money-bill-1-wave"></i>
+                                <h5><a href="#">Grow your wealth</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item">
+                            <div class="categories__content">
+                                <i class="fa-solid fa-rectangle-ad"></i>
+                                <h5><a href="#">Find the best promotions</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item">
+                            <div class="categories__content">
+                                <i class="fa-solid fa-lock"></i>
+                                <h5><a href="#">Fighting Fraud</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item">
+                            <div class="categories__content">
+                                <i class="fa-solid fa-bell"></i>
+                                <h5><a href="#">Outage Notification</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Whats New Section Starts -->
+    <section class="whats-new-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>Whats New</h2>
+                    </div>
+                </div>
+                <div class="categories__slider new__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="new__item">
+                            <div class="img-container">
+                                <img src="img/cart/1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="content-container">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, natus.</p>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="new__item">
+                            <div class="img-container">
+                                <img src="img/cart/2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="content-container">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, natus.</p>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="new__item">
+                            <div class="img-container">
+                                <img src="img/cart/3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="content-container">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, natus.</p>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="new__item">
+                            <div class="img-container">
+                                <img src="img/cart/4.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="content-container">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, natus.</p>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="new__item">
+                            <div class="img-container">
+                                <img src="img/cart/5.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="content-container">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, natus.</p>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="new__item">
+                            <div class="img-container">
+                                <img src="img/cart/6.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="content-container">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, natus.</p>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="new__item">
+                            <div class="img-container">
+                                <img src="img/cart/7.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="content-container">
+                                <h4>Lorem ipsum dolor sit.</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, natus.</p>
+                                <a href="#">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Whats New Section Ends -->
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="img/banner/offer-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="img/banner/offer-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Top Brands Section Begin -->
+    <section class="latest-product spad">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="latest-product__text">
+                        <h4>Top Brands</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-2.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-3.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-4.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-5.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-6.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="latest-product__text">
+                        <h4>Top Brands</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-7.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-8.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-9.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-10.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-11.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-12.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="latest-product__text">
+                        <h4>Top Brands</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-13.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-14.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-15.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsumy</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-16.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/liogo-17.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="img/latest-product/logo-18.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lorem Ipsum</h6>
+                                        <span>Lorem Ipsum</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top Brands Section End -->
+
+    <!-- Discover More Section Begin -->
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>Discover More</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog__item">
+                        <div class="mb-3 blog__item__pic">
+                            <img src="img/blog/discover-1.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Lorem, ipsum dolor.</a></h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog__item">
+                        <div class="mb-3 blog__item__pic">
+                            <img src="img/blog/discover-2.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Lorem, ipsum dolor.</a></h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog__item">
+                        <div class="mb-3 blog__item__pic">
+                            <img src="img/blog/discover-3.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <h5><a href="#">Lorem, ipsum dolor.</a></h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Discover More Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/mallf-logo.jpg" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: Mall Directory PO Box. 487177
+                                Office 404, Bldg B,
+                                Souk Al Bahar, Old Town Island،
+                                Burj Khalifa District, Dubai, UAE</li>
+                            <li>Phone: +971 559977197</li>
+                            <li>Email: info@aamm.ae</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="./shopping.htnl">Shopping</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://www.pravu.in/" target="_blank">pravucreativestudio</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+
+
+</body>
+
+</html>
